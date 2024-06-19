@@ -1,0 +1,199 @@
+body {
+    background-color: #cfe6fa;
+}
+
+header.jumbotron {
+    background-color: #f0f8ff;
+    color: rgb(0, 0, 0);
+}
+
+.text-bg-dark {
+    background-color: #343a40 !important;
+}
+
+.nav-link.text-white {
+    color: #ffffff !important;
+}
+
+.nav-link.text-white:hover {
+    color: #007bff !important;
+}
+
+.card {
+    background-color: #f0f8ff;
+}
+
+section.bg-light {
+    background-color: #f0f8ff !important;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+    transform: scale(1.2);
+}
+
+.img1 {
+    width: 300px;
+    height: 300px;
+    transition: transform 0.3s ease;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px solid #343a40;
+    box-shadow: 5px 5px 5px #343a40;
+    
+}
+
+.img1:hover {
+    transform: scale(1.2);
+}
+
+.img2 {
+    width: 400px;
+    height: 400px;
+    transition: transform 0.3s ease;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.img2:hover {
+    transform: scale(1.2);
+}
+
+.img3 {
+    width: 400px;
+    height: 400px;
+    transition: transform 0.3s ease;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.img3:hover {
+    transform: scale(1.2);
+}
+
+li {
+    font-size: x-large;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: scale(1.2);
+}
+
+h5 {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+h5:hover {
+    transform: scale(1.2);
+}
+
+h1 {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+h1:hover {
+    transform: scale(1.2);
+}
+
+h2 {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+h2:hover {
+    transform: scale(1.2);
+}
+
+.video-container {
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.video1{
+    transition: transform 0.3s ease;
+    margin-right: 20px;
+    border: 1px solid #343a40;
+    box-shadow: 5px 5px 5px #343a40;
+    cursor: pointer;
+}
+.video1:hover {
+    transform: scale(1.2);
+}
+.video2{
+    transition: transform 0.3s ease;
+    border: 1px solid #343a40;
+    box-shadow: 5px 5px 5px #343a40;
+    cursor: pointer;
+}
+.video2:hover {
+    transform: scale(1.2);
+}
+
+.video3{
+    transition: transform 0.3s ease;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 1px solid #343a40;
+    box-shadow: 5px 5px 5px #343a40;
+    cursor: pointer;
+}
+.video3:hover {
+    transform: scale(1.2);
+}
+.video4{
+    transition: transform 0.3s ease;
+    margin-right: 20px;
+    border: 1px solid #343a40;
+    box-shadow: 5px 5px 5px #343a40;
+    cursor: pointer;
+}
+.video4:hover {
+    transform: scale(1.2);
+}
+.menu{
+    transition: transform 0.3s ease;
+    border: 1px solid #343a40;
+    box-shadow: 5px 5px 5px #343a40;
+    cursor: pointer;
+}
+.menu:hover {
+    transform: scale(1.2);
+}
+
+@media(max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+    }
+
+    video {
+        margin: 0;
+        min-width: 80px;
+        margin-left: 70px;
+    }
+
+    .video3 {
+        margin-left: 70px;
+    }
+    .video4{
+        margin-right: 70px;
+    }
+
+}

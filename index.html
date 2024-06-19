@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+
+    <title>cadastro de estudantes </title>
+
+</head>
+
+<body>
+    <!-- BOTÕES DO TOPO -->
+    <header>
+        <div class="px-3 py-2 text-bg-dark border-bottom" id="home">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                            <use xlink:href="#bootstrap" />
+                        </svg>
+                    </a>
+
+                    <ul class="nav col-12 justify-content-center my-md-0 text-small">
+                        <li>
+                            <a href="#home" class="nav-link text-white">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <use xlink:href="#speedometer2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-houses-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.5 2.5 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354z" />
+                                    <path
+                                        d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708z" />
+                                </svg>
+                                Home
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#funcionalidades" class="nav-link text-white">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <use xlink:href="#speedometer2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-journal-check" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                                    <path
+                                        d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
+                                    <path
+                                        d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
+                                </svg>
+                                Funcionalidades
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#desenvolvedores" class="nav-link text-white">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <use xlink:href="#table" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-person-gear" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+                                </svg>
+                                Desenvolvedor
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#descricao" class="nav-link text-white">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <use xlink:href="#table" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-journal-text" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+                                    <path
+                                        d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
+                                    <path
+                                        d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
+                                </svg>
+                                Descrição
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sistema" class="nav-link text-white">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <use xlink:href="#table" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-laptop" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5" />
+                                </svg>
+                                Sistema
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#precos" class="nav-link text-white">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <use xlink:href="#grid" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-cash-stack" viewBox="0 0 16 16">
+                                    <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                                    <path
+                                        d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z" />
+                                </svg>
+                                Preços
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contato" class="nav-link text-white">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <use xlink:href="#people-circle" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+    </header>
+    <!-- FUNCIONALIDADES -->
+
+    <header class="jumbotron text-center">
+        <br><br><br><br><br><br><br><br><br><br>
+        <h1 class="display-4">Bem-Vindo ao Barato Móveis</h1>
+        <p class="lead">Sistema de Gestão de Móveis.</p>
+        <a class="btn btn-primary btn-lg" href="#funcionalidades" role="button">Saiba Mais</a>
+        <br><br><br><br><br><br><br><br><br><br>
+    </header>
+
+    <section id="funcionalidades" class="container py-5">
+        <br><br><br><br><br><br><br><br><br><br>
+        <h2 class="text-center">Funcionalidades</h2>
+        <br><br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Cadastro de Móveis</h5>
+                        <p class="card-text">Permite o registro completo dos móveis, (codigo,nome,preco,categoria,descricao e etc.
+                            )</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Interface Auto-explicativa</h5>
+                        <p class="card-text">Formulários intuitivos e amigáveis para facilitar a entrada de dados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Integração com Sistemas</h5>
+                        <p class="card-text">Integre facilmente com outros sistemas e plataformas de
+                            gestão.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+    <!-- DESENVOLVEDOR -->
+
+    <section id="desenvolvedores" class="bg-light py-5">
+        <div class="container">
+            <br><br><br><br><br><br>
+            <h2 class="text-center">Sobre o Desenvolvedor</h2>
+            <br><br><br>
+            <center>
+                <div class="col-md-4">
+                    <img src="joao.jpg" class="img1" alt="Desenvolvedor 1">
+                    <br><br>
+                    <h5 class="text-center"> LEONE BATISTA </h5>
+                    <h5>Analise e Desenvolvimento de Sistemas</h5>
+                    <p class="text-center">"Todo mundo deveria aprender a programar, porque isso ensina você a pensar."
+                        - Steve Jobs</p>
+                </div>
+            </center>
+            <br><br><br><br><br><br>
+        </div>
+        <h6>____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+        </h6>
+    </section>
+    <!-- SOBRE O SISTEMA -->
+
+    <section id="descricao" class="bg-light py-5">
+        <div class="container">
+            <br><br><br><br><br><br>
+            <h2 class="text-center">Sobre o Sistema</h2>
+            <br><br><br>
+            <center>
+                <div class="">
+                    <br><br>
+                    <h3>O sistema de CRUD para gestão de móveis oferece uma solução simples e eficaz para acompanhar o
+                        ciclo de vida dos seus produtos. Com funcionalidades intuitivas de cadastro, consulta,
+                        atualização e exclusão, você pode gerenciar seu inventário de forma organizada e sem
+                        complicações.
+                </div>
+                <br>
+                <h3>Mantenha-se no controle do seu estoque, pedidos e clientes com facilidade, garantindo uma gestão
+                    eficiente e satisfatória. Simplifique suas operações diárias e concentre-se no crescimento do seu
+                    negócio com nosso sistema de gestão de móveis.</h3>
+        </div>
+        </center>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+    <!-- CAPTURAS DE TELAS DO SISTEMA -->
+
+    <section id="sistema">
+        <br><br><br><br><br>
+        <center>
+            <h3>TELA DE MENU</h3>
+           <img src="menu.png" alt="" width="400" height="400" class="menu">
+        </center>
+        <br><br><br>
+        <div class="video-container">
+            <div>
+                <center>
+                    <h3>Cadastro do Móvel</h3>
+                </center>
+                <video width="300" height="300" controls class="video1">
+                    <source src="cadastro_movel.mp4" type="video/mp4">
+                </video>
+            </div>
+            <br><br>
+           <div>
+            <center>
+                <h3>Atualizar do Móvel</h3>
+            </center>
+            <video width="300" height="300" controls class="video2" >
+                <source src="atualizar_movel.mp4" type="video/mp4">
+            </video>
+           </div>
+            <br><br>
+           <div>
+           <center>
+            <h3>Consulta do Móvel</h3>
+           </center>
+            <video width="300" height="300" controls class="video3" >
+                <source src="consulta_movel.mp4" type="video/mp4">
+            </video>
+           </div>
+           <br><br>
+           <div>
+           <center>
+            <h3>Exclusão do Móvel</h3>
+           </center>
+            <video width="300" height="300" controls class="video4" >
+                <source src="deletar_movel.mp4" type="video/mp4">
+            </video>
+           </div>
+        </div>
+        <br><br>
+        <center>
+           <div>
+            <h3>Funcionamento com Dados</h3>
+            <video width="300" height="300" controls class="video4" >
+                <source src="funcionamento.mp4" type="video/mp4">
+            </video>
+           </div>
+        </center> 
+        <br><br>
+    </section>
+    <br><br><br><br><br><br><br><br><br>
+    <h6>____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+    </h6>
+
+    <!-- PREÇOS -->
+
+    <section id="precos" class="container py-5">
+        <br><br><br><br><br>
+        <h2 class="text-center">Preços</h2>
+        <br><br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Plano Básico</h5>
+                        <p class="card-text">R$ 99/mês</p>
+                        <ul>
+                            <p>. Cadastro de até 500 Moveis</p>
+                            <p>. Suporte via e-mail</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Plano Padrão</h5>
+                        <p class="card-text">R$ 199/mês</p>
+                        <ul>
+                            <p>. Cadastro de até 1.000 Moveis</p>
+                            <p>. Suporte via e-mail e telefone</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Plano Premium</h5>
+                        <p class="card-text">R$ 299/anual</p>
+                        <ul>
+                            <p>. Cadastro ilimitado de Moveis</p>
+                            <p>. Suporte 24/7</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+    <!-- CONTATO -->
+
+    <section id="contato" class="bg-light py-5">
+        <div class="container">
+            <br><br><br><br><br><br><br><br><br><br>
+            <h2 class="text-center">Contato</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="envia_email.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Seu email">
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Assunto">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea class="form-control" id="mesagem" name="mensagem" rows="3"
+                                placeholder="Sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="reset" class="btn btn-primary">Limpar</button>
+                        <br><br>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5>Endereço</h5>
+                    <p> Rua da Pedra, 777 <br>Centro, AV.Brasilia <br> CEP 12345-678 </p>
+                    <h5> Email </h5>
+                    <p> contato@cadastroestudantes.com </p>
+                    <h5> Estado </h5>
+                    <p> Brasilia </p>
+                    <h5> Telefone </h5>
+                    <p>(61) 9 8765-4321</p>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Sistema de Cadastro de estudantes. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
